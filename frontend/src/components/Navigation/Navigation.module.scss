@@ -1,0 +1,57 @@
+@import "src/theme";
+
+.navigation {
+  background-color: $primary-color;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .brand {
+    font-family: $primary-cursive-font-family;
+    font-weight: 900;
+  }
+
+  :global(.nav-link) {
+    font-weight: 400;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
+    &:hover {
+      border-bottom: 2px solid white;
+    }
+
+    &::after .active {
+      content: "";
+      transition: all 0.2s;
+      opacity: 0;
+      height: 2px;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  :global(.dropdown-menu) {
+    min-width: unset;
+
+    .email {
+      cursor: unset;
+      border-bottom: lighten($primary-color, 50%);
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      font-size: 11px;
+      padding-bottom: 8px;
+
+      &:hover {
+        background-color: unset;
+      }
+    }
+  }
+}

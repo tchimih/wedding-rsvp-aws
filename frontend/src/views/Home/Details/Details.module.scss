@@ -1,0 +1,53 @@
+@import "src/theme";
+
+.details {
+  padding-top: 90px;
+  height: 700px;
+  background-color: $primary-color;
+  font-family: "Mindfully";
+  color: rgb(255, 255, 255);
+
+  h2 {
+    font-weight: 400;
+    text-transform: none;
+    line-height: 0.97;
+    letter-spacing: normal;
+    font-size: 70px;
+  }
+
+  .announcement {
+    font-weight: 100;
+  }
+
+  .date {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 3.1em;
+    font-weight: 100;
+  }
+
+  .location {
+    font-family: $primary-cursive-font-family;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    a:link,
+    a:visited,
+    a:hover,
+    a:link {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .confirmation {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 1.1em;
+  }
+
+  .calendar {
+    padding-top: 50px;
+    font-family: $primary-font-family;
+    font-weight: 300;
+    font-size: 1.1em;
+  }
+}

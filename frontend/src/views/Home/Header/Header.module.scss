@@ -1,0 +1,93 @@
+@import "src/theme";
+
+.header {
+  height: 800px;
+  //background-image: url("../../photos/pexels-pixabay-265791.jpg");
+  //background-color: $secondary-color !important;
+
+  padding-top: 0px !important;
+  padding-bottom: 0 !important;
+
+  h1 {
+    font-family: $primary-cursive-font-family;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 5em;
+  }
+
+  // Huge Desktops
+  @media (min-width: $size-huge) {
+    height: $huge-desktop-height;
+    //background-image: url("../../../photos/header_large.png");
+    padding-top: 0px !important;
+
+    h1 {
+      font-size: 7.5em;
+    }
+  }
+
+  // Desktops
+  @media (min-width: $size-extra-large) and (max-width: $size-huge - 1) {
+    height: $desktop-height;
+    //background-image: url("../../../photos/header_large.png");
+    padding-top: 100px !important;
+
+    h1 {
+      font-size: 4.5em;
+    }
+  }
+
+  // Laptops / Desktops
+  @media (min-width: $size-large) and (max-width: $size-extra-large - 1) {
+    height: $laptops-height;
+    //background-image: url("../../../photos/header_medium.png");
+    padding-top: 0px !important;
+
+    h1 {
+      font-size: 5.5em;
+    }
+  }
+
+  // Tablets (Portrait)
+  @media (min-width: $size-medium) and (max-width: $size-large - 1) {
+    height: 600px;
+    //background-image: url("../../../photos/header_medium.png");
+    padding-top: 0px !important;
+
+    h1 {
+      font-size: 4.5em;
+    }
+  }
+
+  // Tablets (Landscape)
+  @media (min-width: $size-medium) and (max-width: $size-large - 1) and (orientation: landscape) {
+    height: $tablette-height;
+    //background-image: url("../../../photos/header_medium.png");
+    padding-top: 100px !important;
+
+    h1 {
+      font-size: 4em;
+    }
+  }
+
+  // Mobile (Landscape)
+  @media (min-width: $size-small) and (max-width: $size-medium - 1) {
+    height: $mobile-landscape-height;
+    //background-image: url("../../../photos/header_medium.png");
+    padding-top: 0px !important;
+
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+
+  // Mobile
+  @media (min-width: $size-extra-small) and (max-width: $size-small - 1) {
+    height: $mobile-height;
+    padding-top: 0px !important;
+
+    h1 {
+      font-size: 3em;
+    }
+  }
+}

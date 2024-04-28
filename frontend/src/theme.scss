@@ -1,0 +1,34 @@
+// sizes
+$size-huge: 1900px;
+$size-extra-large: 1281px;
+$size-large: 1025px;
+$size-medium: 768px;
+$size-small: 481px;
+$size-extra-small: 320px;
+
+// colors
+$primary-color: #364251;
+$secondary-color: #364251;
+$footer-color: rgba(227, 228, 229, 0.67);
+$white: #ffffff;
+$border-color: rgba(54, 66, 81, 0.78);
+$shadow-color: rgba(54, 66, 81, 0.39);
+
+// fonts
+$primary-cursive-font-family: "Mindfully", cursive;
+$primary-font-family: "Quicksand", sans-serif;
+
+// heights
+$huge-desktop-height: 600px;
+$desktop-height: 700px;
+$laptops-height: 700px;
+$tablette-height: 700px;
+$mobile-height: 1150px;
+$mobile-landscape-height: 920px;
+
+@font-face {
+  font-family: "Mindfully";
+  src:
+    local("Mindfully"),
+    url("./views/fonts/Mindfully\ Regular.ttf") format("truetype");
+}
