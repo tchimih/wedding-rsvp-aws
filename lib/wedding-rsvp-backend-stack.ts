@@ -40,8 +40,8 @@ export class WeddingRsvpBackendStack extends cdk.Stack {
     super(scope, id, props);
 
     // Reference an existing hosted zone
-    const existingHostedZoneId = "HOSTED_ZONE_ID";
-    const existingHostedZoneName = "ZONE_NAME"; // The name of your hosted zone
+    const existingHostedZoneId = "Z08868227OXGJC2LCAVF";
+    const existingHostedZoneName = "caroetanis.net"; // The name of your hosted zone
 
     const hostedZone = HostedZone.fromHostedZoneAttributes(this, "hostedZone", {
       hostedZoneId: existingHostedZoneId,
@@ -51,7 +51,7 @@ export class WeddingRsvpBackendStack extends cdk.Stack {
     const certificate = Certificate.fromCertificateArn(
       this,
       "weddingCertificate",
-      "CERT_ARN"
+      "arn:aws:acm:us-east-1:867016328739:certificate/f028c2b8-03a5-4d5b-9c48-23575754cb6a"
     );
 
     // DynamoDB table

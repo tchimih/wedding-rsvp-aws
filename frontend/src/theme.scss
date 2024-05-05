@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Mindfully";
+  src:
+    local("Mindfully"),
+    url("./views/fonts/Mindfully\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ember";
+  src:
+    local("Ember"),
+    url("./views/fonts/AmazonEmber_Lt.ttf") format("truetype");
+}
+
 // sizes
 $size-huge: 1900px;
 $size-extra-large: 1281px;
@@ -16,7 +30,7 @@ $shadow-color: rgba(54, 66, 81, 0.39);
 
 // fonts
 $primary-cursive-font-family: "Mindfully", cursive;
-$primary-font-family: "Quicksand", sans-serif;
+$primary-font-family: "Ember", "Quicksand", sans-serif;
 
 // heights
 $huge-desktop-height: 600px;
@@ -25,10 +39,3 @@ $laptops-height: 700px;
 $tablette-height: 700px;
 $mobile-height: 1150px;
 $mobile-landscape-height: 920px;
-
-@font-face {
-  font-family: "Mindfully";
-  src:
-    local("Mindfully"),
-    url("./views/fonts/Mindfully\ Regular.ttf") format("truetype");
-}
